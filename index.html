@@ -1,3 +1,133 @@
-<h1 style="color: blue; text-align: center;">Hola, mundo</h1>
-<h2 style="text-align: center;">8 de octubre</h2>
-<div style="position: fixed; bottom: 10px; right: 10px;">Sesión 1 de Vibe Coding</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan David Reyes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Fondo gris claro y moderno */
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: #3D0814;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+        .nav-logo:hover {
+            opacity: 0.8;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 1rem;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        footer {
+            background-color: #442F38;
+            color: #ffffff;
+            padding: 3rem 5%;
+            text-align: center;
+            margin-top: auto;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        .footer-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .footer-socials {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .footer-socials a {
+            color: #e5e7eb;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .footer-socials a:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        .footer-copy {
+            font-size: 0.875rem;
+            color: #d1d5db;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="nav-logo">Juan David Reyes</a>
+        <div class="nav-links">
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">Contacto</h3>
+            <p>Conecta conmigo a través de mis redes sociales:</p>
+            <div class="footer-socials">
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">X</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Juan David Reyes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
